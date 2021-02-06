@@ -15,7 +15,7 @@ const LaunchScreen = ({ navigation }) => {
   useEffect(() => {
     const unsubscribe = NetInfo.addEventListener(info => {
       if (info?.isConnected) {
-        alert('Your Device Connected to Internet')
+        setTimeout(() => navigation.replace('HomeScreen'), 3000)
       } else {
         alert('Your Device Not Connected to Internet')
       }
