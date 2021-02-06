@@ -1,5 +1,5 @@
 const Images = {
-  appLogo: require('./logo.png')
+  splash: require('./splash.jpg')
 }
 
 export default Images
