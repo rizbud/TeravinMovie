@@ -92,7 +92,7 @@ const DetailScreen = props => {
           <TouchableOpacity activeOpacity={0.9} onPress={handleBack}>
             <Icon name='arrow-back-outline' color='#000' size={scaleWidth(7)} />
           </TouchableOpacity>
-          <Text style={styles.subtitle}>{data?.title.substr(0, 25)}{data?.title.length > 25 && '...'}</Text>
+          <Text numberOfLines={1} style={styles.subtitle}>{data?.original_title}</Text>
         </View>
       )}
       parallaxHeaderHeight={scaleWidth(56)}>
