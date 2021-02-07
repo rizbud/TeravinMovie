@@ -13,6 +13,7 @@ const { Types, Creators } = createActions({
   getDetailRequest: ['data'],
   getDetailSuccess: ['data'],
   getDetailFailure: ['error'],
+  resetDetail: ['data'],
 })
 
 export const MovieTypes = Types
@@ -48,6 +49,8 @@ export const getDetailSuccess = (state, { data }) =>
   state.merge({ ...state, detail: { ...state.detail, data, fetching: false, error: null } })
 export const getDetailFailure = (state, { error }) =>
   state.merge({ ...state, detail: { ...state.detail, fetching: false, error } })
+export const resetDetail = (state) =>
+  state.merge({ ...state, detail: { data: null, fetching: false, error: null } })
 
 export const reducer = createReducer(INITIAL_STATE, {
   [Types.GET_TRENDING_REQUEST]: getTrendingRequest,
@@ -61,4 +64,5 @@ export const reducer = createReducer(INITIAL_STATE, {
   [Types.GET_DETAIL_REQUEST]: getDetailRequest,
   [Types.GET_DETAIL_SUCCESS]: getDetailSuccess,
   [Types.GET_DETAIL_FAILURE]: getDetailFailure,
+  [Types.RESET_DETAIL]: resetDetail,
 })

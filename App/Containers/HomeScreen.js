@@ -31,7 +31,8 @@ const HomeScreen = props => {
   }, [])
 
   const onMovieClick = useCallback((item) => {
-    props.getDetail(item?.id)
+    props.resetDetail()
+    setTimeout(() => props.getDetail(item?.id), 100)
     navigation.navigate('DetailScreen')
   }, [])
   
@@ -72,6 +73,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   getTrending: () => dispatch(MovieActions.getTrendingRequest()),
   getList: () => dispatch(MovieActions.getListRequest()),
+  resetDetail: () => dispatch(MovieActions.resetDetail()),
   getDetail: (id) => dispatch(MovieActions.getDetailRequest(id))
 })
 

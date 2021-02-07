@@ -25,13 +25,7 @@ const DetailScreen = props => {
   const { fetching, data, error } = detail
 
   useEffect(() => {
-    if (!data) {
-      Alert.alert('Oopss..', 'Data tidak ditemukan', [{
-        text: 'OK',
-        onPress: () => navigation.goBack()
-      }])
-    }
-    if (error) {
+    if (!fetching && error) {
       Alert.alert('Oopss..', 'Terjadi kesalahan', [{
         text: 'Kembali',
         onPress: () => navigation.goBack()
