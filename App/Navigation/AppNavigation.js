@@ -1,18 +1,25 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
+// import { createStackNavigator } from '@react-navigation/stack'
+import { createSharedElementStackNavigator } from 'react-navigation-shared-element'
 
 import LaunchScreen from '../Containers/LaunchScreen'
-import WelcomeScreen from '../Containers/WelcomeScreen'
+import HomeScreen from '../Containers/HomeScreen'
+import DetailScreen from '../Containers/DetailScreen'
 
-const Stack = createStackNavigator()
+const Stack = createSharedElementStackNavigator()
 
 const AppNavigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="LaunchScreen">
         <Stack.Screen name="LaunchScreen" component={LaunchScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
+        <Stack.Screen name="HomeScreen" component={HomeScreen} options={{ headerShown: false }} />
+        <Stack.Screen
+          name="DetailScreen"
+          component={DetailScreen}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   )

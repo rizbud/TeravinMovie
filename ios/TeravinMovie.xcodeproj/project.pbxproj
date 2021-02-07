@@ -8,34 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* TeravinMovieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TeravinMovieTests.m */; };
-		05B7E741F96743828AE6B124 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F096A85AD5D4524A6C61299 /* MaterialCommunityIcons.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1D477953B5CF44A09F6D146F /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE54261FBA2545CD811AAEC5 /* Feather.ttf */; };
+		1DDF1B8815A04D3281673275 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7169BC554DB445A875B4414 /* Ubuntu-Bold.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* TeravinMovieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TeravinMovieTests.m */; };
-		2F906188F6E34EA9958F91C1 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED52818CE1E7472F9E022D9D /* Entypo.ttf */; };
 		424234370CEF83F30368D5BA /* libPods-TeravinMovie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C4D1A8375888762C1E3C3A /* libPods-TeravinMovie.a */; };
-		4D89761D85454C728B7C5576 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5012FBA2C1E34EE191FE7496 /* Foundation.ttf */; };
-		510757171E204E85B8A7074A /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5AEA632B2AE42D189E24E9E /* AntDesign.ttf */; };
+		4F211896DE2247ED90E3624A /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF3158E556C94484AE352C4D /* Ubuntu-Italic.ttf */; };
 		512B745D0ED4666412217225 /* libPods-TeravinMovie-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45DB468793CEA404013DF182 /* libPods-TeravinMovie-tvOS.a */; };
-		59FCEFF3C9B9423FABB798E4 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFDA032ECB174A96B276B4C3 /* Ionicons.ttf */; };
+		7FCBFBD598E44F49B152122D /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71F760D9C6C942318686E544 /* Ubuntu-BoldItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8C418AED8A6940FCAC97CBA3 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDB8335831FA411C9DA8A298 /* MaterialIcons.ttf */; };
-		9D199652B7FF4B2AAE515BEB /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B2C13C62C5C4DEBBDEAABC3 /* Zocial.ttf */; };
 		9EE1AAC6A64E41FFE10CE197 /* libPods-TeravinMovie-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01CA99B13E1124C8E6481633 /* libPods-TeravinMovie-tvOSTests.a */; };
-		A414F4065E7840118A732DA0 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9061378089534D86B9E9F363 /* SimpleLineIcons.ttf */; };
-		A55136DA6271497B9EF8DF8B /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F6FEBFCF9C9499F8ADC4F25 /* FontAwesome.ttf */; };
-		C6F3D5C3BFAB4F2AB1692F73 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2E34190C8034DF78B465B83 /* Octicons.ttf */; };
-		D5F3F81CCB8B483DB18897FB /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA989456B3454F9B92C1647D /* EvilIcons.ttf */; };
-		D83A74FCBA024BB5989883C2 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 414FBA707FB84FD0B024E31A /* FontAwesome5_Solid.ttf */; };
-		D8702D3075A043568BE45B47 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ED5880EBD3C440FBF9726AA /* FontAwesome5_Regular.ttf */; };
+		A16A526F0A164178B44C386B /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EB4B45864BA42C0A06C6372 /* Ubuntu-Light.ttf */; };
+		D344FA589FFD445F95797958 /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8EA997BCED8546A89E9FAA27 /* Ubuntu-LightItalic.ttf */; };
+		DD01EEB3DEB74E87992EA10A /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FF6D339763F4253893AE668 /* Ubuntu-Medium.ttf */; };
+		DF888ABA914345288F0EB35C /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AF48C01A01F41DAB054EA4D /* Ubuntu-MediumItalic.ttf */; };
 		DFE5BAF829206EFFFB31F534 /* libPods-TeravinMovie-TeravinMovieTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 118559D8654582FA033171E6 /* libPods-TeravinMovie-TeravinMovieTests.a */; };
-		E96A5E04AE054BACA01BF2C9 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 014A96408D634A9282DB9D8F /* Fontisto.ttf */; };
-		F0725962B8804ACA8F55C41B /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D363EC55231A4117AF5F133C /* FontAwesome5_Brands.ttf */; };
+		EBF12E7C1E3E4DA3AB3C77F6 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E635E45BFD454E46A042300B /* Ubuntu-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +52,9 @@
 		00E356EE1AD99517003FC87E /* TeravinMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeravinMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* TeravinMovieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeravinMovieTests.m; sourceTree = "<group>"; };
-		014A96408D634A9282DB9D8F /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		014A96408D634A9282DB9D8F /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		01CA99B13E1124C8E6481633 /* libPods-TeravinMovie-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeravinMovie-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ED5880EBD3C440FBF9726AA /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		0ED5880EBD3C440FBF9726AA /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		118559D8654582FA033171E6 /* libPods-TeravinMovie-TeravinMovieTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeravinMovie-TeravinMovieTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* TeravinMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeravinMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TeravinMovie/AppDelegate.h; sourceTree = "<group>"; };
@@ -72,32 +64,40 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TeravinMovie/main.m; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* TeravinMovie-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TeravinMovie-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* TeravinMovie-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TeravinMovie-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		414FBA707FB84FD0B024E31A /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		3FF6D339763F4253893AE668 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Medium.ttf"; path = "../assets/fonts/Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		414FBA707FB84FD0B024E31A /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		45DB468793CEA404013DF182 /* libPods-TeravinMovie-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeravinMovie-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5012FBA2C1E34EE191FE7496 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		5012FBA2C1E34EE191FE7496 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		5AF48C01A01F41DAB054EA4D /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-MediumItalic.ttf"; path = "../assets/fonts/Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
 		5E480BDD538CA88F22222545 /* Pods-TeravinMovie-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeravinMovie-tvOS.release.xcconfig"; path = "Target Support Files/Pods-TeravinMovie-tvOS/Pods-TeravinMovie-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		5F6FEBFCF9C9499F8ADC4F25 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		6B2C13C62C5C4DEBBDEAABC3 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		6F096A85AD5D4524A6C61299 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		5F6FEBFCF9C9499F8ADC4F25 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		6B2C13C62C5C4DEBBDEAABC3 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		6F096A85AD5D4524A6C61299 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		71F760D9C6C942318686E544 /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-BoldItalic.ttf"; path = "../assets/fonts/Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TeravinMovie/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86C4D1A8375888762C1E3C3A /* libPods-TeravinMovie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeravinMovie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9061378089534D86B9E9F363 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		8EA997BCED8546A89E9FAA27 /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-LightItalic.ttf"; path = "../assets/fonts/Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
+		9061378089534D86B9E9F363 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		93DE28AD8BF92CA7168AE8D5 /* Pods-TeravinMovie-TeravinMovieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeravinMovie-TeravinMovieTests.release.xcconfig"; path = "Target Support Files/Pods-TeravinMovie-TeravinMovieTests/Pods-TeravinMovie-TeravinMovieTests.release.xcconfig"; sourceTree = "<group>"; };
+		9EB4B45864BA42C0A06C6372 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Light.ttf"; path = "../assets/fonts/Ubuntu-Light.ttf"; sourceTree = "<group>"; };
 		AEAACBA378044C7F2880D5AE /* Pods-TeravinMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeravinMovie.release.xcconfig"; path = "Target Support Files/Pods-TeravinMovie/Pods-TeravinMovie.release.xcconfig"; sourceTree = "<group>"; };
-		C2E34190C8034DF78B465B83 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		C5AEA632B2AE42D189E24E9E /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		B7169BC554DB445A875B4414 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Bold.ttf"; path = "../assets/fonts/Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		C2E34190C8034DF78B465B83 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		C5AEA632B2AE42D189E24E9E /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		C84C5E98E47BF33DE3F18031 /* Pods-TeravinMovie-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeravinMovie-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-TeravinMovie-tvOSTests/Pods-TeravinMovie-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8617D133F27B595907706B5 /* Pods-TeravinMovie-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeravinMovie-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-TeravinMovie-tvOS/Pods-TeravinMovie-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		CE54261FBA2545CD811AAEC5 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
-		CFDA032ECB174A96B276B4C3 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		D363EC55231A4117AF5F133C /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		CE54261FBA2545CD811AAEC5 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		CF3158E556C94484AE352C4D /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Italic.ttf"; path = "../assets/fonts/Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		CFDA032ECB174A96B276B4C3 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		D363EC55231A4117AF5F133C /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		D83590EEA266FF436E825777 /* Pods-TeravinMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeravinMovie.debug.xcconfig"; path = "Target Support Files/Pods-TeravinMovie/Pods-TeravinMovie.debug.xcconfig"; sourceTree = "<group>"; };
-		DA989456B3454F9B92C1647D /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		DA989456B3454F9B92C1647D /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		DD24A8072E2ABBBF5DEEB0F2 /* Pods-TeravinMovie-TeravinMovieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeravinMovie-TeravinMovieTests.debug.xcconfig"; path = "Target Support Files/Pods-TeravinMovie-TeravinMovieTests/Pods-TeravinMovie-TeravinMovieTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DDB8335831FA411C9DA8A298 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		DDB8335831FA411C9DA8A298 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		E635E45BFD454E46A042300B /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Regular.ttf"; path = "../assets/fonts/Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		ED52818CE1E7472F9E022D9D /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		ED52818CE1E7472F9E022D9D /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		F9B091DADB6F74224C4D2B42 /* Pods-TeravinMovie-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeravinMovie-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-TeravinMovie-tvOSTests/Pods-TeravinMovie-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,9 +200,16 @@
 				C2E34190C8034DF78B465B83 /* Octicons.ttf */,
 				9061378089534D86B9E9F363 /* SimpleLineIcons.ttf */,
 				6B2C13C62C5C4DEBBDEAABC3 /* Zocial.ttf */,
+				B7169BC554DB445A875B4414 /* Ubuntu-Bold.ttf */,
+				71F760D9C6C942318686E544 /* Ubuntu-BoldItalic.ttf */,
+				CF3158E556C94484AE352C4D /* Ubuntu-Italic.ttf */,
+				9EB4B45864BA42C0A06C6372 /* Ubuntu-Light.ttf */,
+				8EA997BCED8546A89E9FAA27 /* Ubuntu-LightItalic.ttf */,
+				3FF6D339763F4253893AE668 /* Ubuntu-Medium.ttf */,
+				5AF48C01A01F41DAB054EA4D /* Ubuntu-MediumItalic.ttf */,
+				E635E45BFD454E46A042300B /* Ubuntu-Regular.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -251,7 +258,6 @@
 				C84C5E98E47BF33DE3F18031 /* Pods-TeravinMovie-tvOSTests.debug.xcconfig */,
 				F9B091DADB6F74224C4D2B42 /* Pods-TeravinMovie-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -399,22 +405,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				510757171E204E85B8A7074A /* AntDesign.ttf in Resources */,
-				2F906188F6E34EA9958F91C1 /* Entypo.ttf in Resources */,
-				D5F3F81CCB8B483DB18897FB /* EvilIcons.ttf in Resources */,
-				1D477953B5CF44A09F6D146F /* Feather.ttf in Resources */,
-				A55136DA6271497B9EF8DF8B /* FontAwesome.ttf in Resources */,
-				F0725962B8804ACA8F55C41B /* FontAwesome5_Brands.ttf in Resources */,
-				D8702D3075A043568BE45B47 /* FontAwesome5_Regular.ttf in Resources */,
-				D83A74FCBA024BB5989883C2 /* FontAwesome5_Solid.ttf in Resources */,
-				E96A5E04AE054BACA01BF2C9 /* Fontisto.ttf in Resources */,
-				4D89761D85454C728B7C5576 /* Foundation.ttf in Resources */,
-				59FCEFF3C9B9423FABB798E4 /* Ionicons.ttf in Resources */,
-				05B7E741F96743828AE6B124 /* MaterialCommunityIcons.ttf in Resources */,
-				8C418AED8A6940FCAC97CBA3 /* MaterialIcons.ttf in Resources */,
-				C6F3D5C3BFAB4F2AB1692F73 /* Octicons.ttf in Resources */,
-				A414F4065E7840118A732DA0 /* SimpleLineIcons.ttf in Resources */,
-				9D199652B7FF4B2AAE515BEB /* Zocial.ttf in Resources */,
+				1DDF1B8815A04D3281673275 /* Ubuntu-Bold.ttf in Resources */,
+				7FCBFBD598E44F49B152122D /* Ubuntu-BoldItalic.ttf in Resources */,
+				4F211896DE2247ED90E3624A /* Ubuntu-Italic.ttf in Resources */,
+				A16A526F0A164178B44C386B /* Ubuntu-Light.ttf in Resources */,
+				D344FA589FFD445F95797958 /* Ubuntu-LightItalic.ttf in Resources */,
+				DD01EEB3DEB74E87992EA10A /* Ubuntu-Medium.ttf in Resources */,
+				DF888ABA914345288F0EB35C /* Ubuntu-MediumItalic.ttf in Resources */,
+				EBF12E7C1E3E4DA3AB3C77F6 /* Ubuntu-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

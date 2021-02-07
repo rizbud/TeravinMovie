@@ -3,25 +3,24 @@ import API from '../Services/Api'
 import FixtureAPI from '../Services/FixtureApi'
 import DebugConfig from '../Config/DebugConfig'
 
-/* ------------- Types ------------- */
 import { StartupTypes } from '../Redux/StartupRedux'
 import { StaticDataTypes } from '../Redux/StaticDataRedux'
+import { MovieTypes } from '../Redux/MovieRedux'
 
-/* ------------- Sagas ------------- */
 import { startup } from './StartupSagas'
 import { getRoot } from './StaticDataSagas'
+import { getTrending, getList, getDetail } from './MovieSagas'
 
-/* ------------- API ------------- */
-// The API we use is only used from Sagas, so we create it here and pass along
-// to the sagas which need it.
 const api = DebugConfig.useFixtures ? FixtureAPI : API.create()
 
-/* ------------- Connect Types To Sagas ------------- */
 export default function * root () {
   yield all([
-    // some sagas only receive an action
     takeLatest(StartupTypes.STARTUP, startup),
 
-    takeLatest(StaticDataTypes.GET_ROOT_REQUEST, getRoot, api)
+    takeLatest(StaticDataTypes.GET_ROOT_REQUEST, getRoot, api),
+
+    takeLatest(MovieTypes.GET_TRENDING_REQUEST, getTrending, api),
+    takeLatest(MovieTypes.GET_LIST_REQUEST, getList, api),
+    takeLatest(MovieTypes.GET_DETAIL_REQUEST, getDetail, api),
   ])
 }

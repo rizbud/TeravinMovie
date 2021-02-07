@@ -1,21 +1,53 @@
+import { scaleHeight, scaleWidth } from 'osmicsx'
+
 export default {
   // width & height
-  "w-200": { width: 200 },
-  "h-200": { height: 200 },
+  "hw-25": { height: scaleWidth(25) },
+  "hw-40": { height: scaleWidth(40) },
+  "hw-50": { height: scaleWidth(50) },
+  "hw-54": { height: scaleWidth(54) },
+  "hw-56": { height: scaleWidth(56) },
+  "hw-60": { height: scaleWidth(60) },
+  "min-h-93": { minHeight: scaleHeight(93) },
+  "max-h-90": { maxHeight: scaleHeight(90) },
+
+  // position
+  "bottom-w-7": { bottom: scaleWidth(7) },
 
   // color
-  "primary": "#f9bc15",
-  "soft-secondary": "rgba(53, 73, 94, 0.85)",
+  "white-semi": 'rgba(255, 255, 255, 0.5)',
 
-  // background color
-  "bg-primary": { backgroundColor: "#f9bc15" },
-  "bg-soft-secondary": { backgroundColor: "rgba(53, 73, 94, 0.85)" },
+  // padding
+  "px-4": { paddingHorizontal: scaleWidth(4) },
+  "pt-w-5": { paddingTop: scaleWidth(5) },
+  "pt-5": { paddingTop: scaleHeight(5) },
+  "pt-6": { paddingTop: scaleHeight(6) },
+  "pb-1.5": { paddingBottom: scaleHeight(1.5) },
+  "py-1.5": { paddingVertical: scaleHeight(1.5) },
+  "py-2": { paddingVertical: scaleHeight(2) },
 
-  // border color
-  "border-primary": { borderColor: "#f9bc15" },
-  "border-soft-secondary": { borderColor: "rgba(53, 73, 94, 0.5)" },
+  // margin
+  "ml-2": { marginLeft: scaleWidth(2) },
+  "mt-1": { marginTop: scaleHeight(1) },
+  "mb-1": { marginBottom: scaleHeight(1) },
+  "mb-1.5": { marginBottom: scaleHeight(1.5) },
+  "mb-2": { marginBottom: scaleHeight(2) },
+  "mr-2": { marginRight: scaleWidth(2) },
+  "mr-4": { marginRight: scaleWidth(4) },
+  "my-0.7": { marginVertical: scaleHeight(0.7) },
+  "mx-4": { marginHorizontal: scaleWidth(4) },
 
-  // text color
-  "text-primary": { color: "#f9bc15" },
-  "text-soft-secondary": { color: "rgba(53, 73, 94, 0.5)" },
+  // font size
+  "text-h1": { fontSize: scaleWidth(5.8) },
+  "text-h2": { fontSize: scaleWidth(5.2) },
+  "text-h3": { fontSize: scaleWidth(4.5) },
+  "text-medium": { fontSize: scaleWidth(4.1) },
+  "text-normal": { fontSize: scaleWidth(3.8) },
+
+  // font family
+  "light": { fontFamily: 'Ubuntu-Light' },
+  "regular": { fontFamily: 'Ubuntu-Regular' },
+  "medium": { fontFamily: 'Ubuntu-Medium' },
+  "bold": { fontFamily: 'Ubuntu-Bold' },
+  "italic": { fontFamily: 'Ubuntu-Italic' },
 }
