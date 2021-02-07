@@ -9,6 +9,7 @@ export default {
   "hw-56": { height: scaleWidth(56) },
   "hw-60": { height: scaleWidth(60) },
   "min-h-93": { minHeight: scaleHeight(93) },
+  "max-h-90": { maxHeight: scaleHeight(90) },
 
   // position
   "bottom-w-7": { bottom: scaleWidth(7) },

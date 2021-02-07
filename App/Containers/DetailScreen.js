@@ -1,12 +1,19 @@
-import React, { useEffect, useCallback } from 'react'
+import React, { useEffect, useCallback, useState } from 'react'
 import { connect } from 'react-redux'
 import MovieActions from '../Redux/MovieRedux'
-import { RefreshControl, Alert, View, Text } from 'react-native'
+import {
+  TouchableOpacity,
+  RefreshControl,
+  Platform,
+  Alert,
+  View,
+  Text
+} from 'react-native'
 import SafeAreaView from 'react-native-safe-area-view'
 import ParallaxScrollView from 'react-native-parallax-scroll-view'
 import FastImage from 'react-native-fast-image'
 import Icon from 'react-native-vector-icons/Ionicons'
-import { TouchableOpacity } from 'react-native-gesture-handler'
+// import { TouchableOpacity } from 'react-native-gesture-handler'
 import Shimmer from 'react-native-shimmer'
 
 // Components
@@ -23,6 +30,7 @@ import { scaleWidth, scaleHeight } from 'osmicsx'
 const DetailScreen = props => {
   const { navigation, detail } = props
   const { fetching, data, error } = detail
+  const [stickyHeight, setStickyHeight] = useState(scaleHeight(5))
 
   useEffect(() => {
     if (!fetching && error) {
@@ -33,6 +41,14 @@ const DetailScreen = props => {
     }
   }, [detail])
 
+  handleScroll = (e) => {
+    if(e.nativeEvent.contentOffset.y <= 20) {
+      setStickyHeight(0)
+    } else {
+      setStickyHeight(scaleHeight(5))
+    }
+  }
+
   const handleBack = useCallback(() => navigation.goBack(), [])
 
   const onRefresh = useCallback(() => {
@@ -41,27 +57,38 @@ const DetailScreen = props => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar translucent animated backgroundColor='transparent' barStyle='dark-content' />
+      <StatusBar
+        translucent={false}
+        animated
+        backgroundColor='white'
+        barStyle='dark-content'
+      />
       <ParallaxScrollView
       showsVerticalScrollIndicator={false}
+      scrollEvent={handleScroll}
       backgroundColor='white'
       refreshControl={<RefreshControl refreshing={fetching} onRefresh={onRefresh} />}
-      renderBackground={() => fetching ? (
-        <Shimmer animating style={styles.backdrop} />
+      renderForeground={() => fetching ? (
+        <>
+          <Shimmer animating style={styles.backdrop} />
+          <TouchableOpacity activeOpacity={0.9} onPress={handleBack} style={styles.back}>
+            <Icon name="arrow-back" color='#fff' size={scaleWidth(8)} />
+          </TouchableOpacity>
+        </>
       ) : (
-        <FastImage
-          source={{ uri: `${Images.prefix}${data?.backdrop_path}` }}
-          style={styles.backdrop}
-        />
+        <>
+          <FastImage
+            source={{ uri: `${Images.prefix}${data?.backdrop_path}` }}
+            style={styles.backdrop}
+          />
+          <TouchableOpacity  activeOpacity={0.9} onPress={handleBack} style={styles.back}>
+            <Icon name="arrow-back" color='#fff' size={scaleWidth(8)} />
+          </TouchableOpacity>
+        </>
       )}
-      renderForeground={() => (
-        <TouchableOpacity activeOpacity={0.9} onPress={handleBack} style={styles.back}>
-          <Icon name="arrow-back" color='#fff' size={scaleWidth(8)} />
-        </TouchableOpacity>
-      )}
-      stickyHeaderHeight={scaleHeight(11)}
+      stickyHeaderHeight={stickyHeight}
       renderStickyHeader={() => (
-        <View style={styles.stickyHeader}>
+        <View style={[styles.stickyHeader, Platform.OS === 'android' && apply('pt-1')]}>
           <TouchableOpacity activeOpacity={0.9} onPress={handleBack}>
             <Icon name='arrow-back-outline' color='#000' size={scaleWidth(7)} />
           </TouchableOpacity>
