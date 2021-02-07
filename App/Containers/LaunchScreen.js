@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-import { StatusBar } from 'react-native'
 import SafeAreaView from 'react-native-safe-area-view'
 import FastImage from 'react-native-fast-image'
 import NetInfo from '@react-native-community/netinfo'
+
+// Components
+import StatusBar from '../Components/StatusBar'
 
 import Images from '../Images'
 
@@ -11,7 +13,9 @@ import Images from '../Images'
 import styles from './Styles/LaunchScreenStyle'
 import { apply } from '../Themes/OsmiProvider'
 
-const LaunchScreen = ({ navigation }) => {
+const LaunchScreen = props => {
+  const { navigation } = props
+
   useEffect(() => {
     const unsubscribe = NetInfo.addEventListener(info => {
       if (info?.isConnected) {
