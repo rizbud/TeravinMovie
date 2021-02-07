@@ -6,7 +6,8 @@ import ReduxPersist from '../Config/ReduxPersist'
 
 /* ------------- Assemble The Reducers ------------- */
 export const reducers = combineReducers({
-  staticData: require('./StaticDataRedux').reducer
+  staticData: require('./StaticDataRedux').reducer,
+  movie: require('./MovieRedux').reducer,
 })
 
 export default () => {

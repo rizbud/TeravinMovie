@@ -26,7 +26,7 @@ const ImageSlider = props => {
       removeClippedSubviews={false}
       paginationStyle={apply('bottom-w-7')}>
         {data.map((item, index) => (
-          <FastImage source={{ uri: `${Images.prefix}${item}` }} key={index} style={styles.image} />
+          <FastImage source={{ uri: `${Images.prefix}${item?.backdrop_path}` }} key={index} style={styles.image} />
         ))}
       </Swiper>
     </View>

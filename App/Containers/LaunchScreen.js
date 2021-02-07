@@ -8,6 +8,7 @@ import NetInfo from '@react-native-community/netinfo'
 import StatusBar from '../Components/StatusBar'
 
 import Images from '../Images'
+import MovieActions from '../Redux/MovieRedux'
 
 // Styles
 import styles from './Styles/LaunchScreenStyle'
@@ -19,6 +20,8 @@ const LaunchScreen = props => {
   useEffect(() => {
     const unsubscribe = NetInfo.addEventListener(info => {
       if (info?.isConnected) {
+        props.getTrending()
+        props.getList()
         setTimeout(() => navigation.replace('HomeScreen'), 3000)
       } else {
         alert('Your Device Not Connected to Internet')
@@ -30,15 +33,19 @@ const LaunchScreen = props => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle='dark-content' backgroundColor='white' />
+      <StatusBar translucent barStyle='dark-content' backgroundColor='white' />
 
       <FastImage source={Images.splash} style={styles.image} />
     </SafeAreaView>
   )
 }
 
-const bindActions = dispatch => ({
-
+const mapStateToProps = state => ({
 })
 
-export default connect(bindActions)(LaunchScreen)
+const bindActions = dispatch => ({
+  getTrending: () => dispatch(MovieActions.getTrendingRequest()),
+  getList: () => dispatch(MovieActions.getListRequest())
+})
+
+export default connect(mapStateToProps, bindActions)(LaunchScreen)

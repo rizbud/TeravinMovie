@@ -23,13 +23,13 @@ const MovieCard = props => {
     <TouchableOpacity activeOpacity={0.9} style={styles.container} {...props}>
       <FastImage
         style={styles.image}
-        source={{ uri: `${Images.prefix}${item?.image_url}` }}
+        source={{ uri: `${Images.prefix}${item?.poster_path}` }}
         resizeMode='stretch'
       />
       <View style={styles.detail}>
-        <Text numberOfLines={2} style={styles.title}>{item?.title.substr(0, 40)}{item?.title.length > 40 && '...'}</Text>
-        <Text style={styles.date}>{dayjs(item?.release).locale('id').format('D MMMM YYYY')}</Text>
-        <Score score={item?.rating} />
+        <Text numberOfLines={2} style={styles.title}>{item?.title}</Text>
+        <Text style={styles.date}>{dayjs(item?.release_date).locale('id').format('D MMMM YYYY')}</Text>
+        <Score score={item?.vote_average} />
       </View>
     </TouchableOpacity>
   )

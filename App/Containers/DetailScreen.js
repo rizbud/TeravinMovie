@@ -21,19 +21,19 @@ import { apply } from '../Themes/OsmiProvider'
 import { scaleWidth, scaleHeight } from 'osmicsx'
 
 const DetailScreen = props => {
-  const { navigation, route } = props
-  const { item } = route.params
+  const { navigation, route, detail } = props
+  const { fetching, data } = detail
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar translucent backgroundColor='transparent' barStyle='dark-content' />
+      <StatusBar translucent animated backgroundColor='transparent' barStyle='dark-content' />
       <ParallaxScrollView
       showsVerticalScrollIndicator={false}
       backgroundColor='white'
       contentContainerStyle={apply('bg-white w/100')}
       renderBackground={() => (
         <FastImage
-          source={{ uri: `${Images.prefix}${item?.backdrop}` }}
+          source={{ uri: `${Images.prefix}${data?.backdrop_path}` }}
           style={styles.backdrop}
         />
       )}
@@ -48,15 +48,15 @@ const DetailScreen = props => {
           <TouchableOpacity activeOpacity={0.9} onPress={() => navigation.goBack()}>
             <Icon name='arrow-back-outline' color='#000' size={scaleWidth(7)} />
           </TouchableOpacity>
-          <Text style={styles.subtitle}>{item?.title.substr(0, 25)}{item?.title.length > 25 && '...'}</Text>
+          <Text style={styles.subtitle}>{data?.title.substr(0, 25)}{data?.title.length > 25 && '...'}</Text>
         </View>
       )}
       parallaxHeaderHeight={scaleWidth(56)}>
         <View style={apply('flex px-5 min-h-93')}>
-          <MovieDetail data={item} />
+          <MovieDetail data={data} />
           <Text style={styles.label}>Overview:</Text>
           <Text style={styles.overview}>
-            Lorem ipsum dolor sit amet. The quick brown fox jumps over the lazy dog. Lorem ipsum dolor sit amet. The quick brown fox jumps over the lazy dog. Lorem ipsum dolor sit amet. The quick brown fox jumps over the lazy dog. Lorem ipsum dolor sit amet. The quick brown fox jumps over the lazy dog. Lorem ipsum dolor sit amet. The quick brown fox jumps over the lazy dog. 
+            {data?.overview}
           </Text>
         </View>
       </ParallaxScrollView>
@@ -65,9 +65,11 @@ const DetailScreen = props => {
 }
 
 const mapStateToProps = state => ({
+  detail: state.movie.detail
 })
 
 const mapDispatchToProps = dispatch => ({
+  getList: () => dispatch(MovieActions.getListRequest())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(DetailScreen)

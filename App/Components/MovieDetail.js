@@ -19,14 +19,16 @@ const MovieDetail = props => {
 
   return (
     <View style={styles.container}>
-      <FastImage source={{ uri: `${Images.prefix}${data?.image_url}` }} style={styles.image} resizeMode='stretch' />
+      <FastImage source={{ uri: `${Images.prefix}${data?.poster_path}` }} style={styles.image} resizeMode='stretch' />
       <View style={apply('flex')}>
         <Text style={styles.title}>{data?.title}</Text>
-        <Text style={styles.tagline}>Lorem ipsum dolor sit amet constectuar.</Text>
-        <Text style={styles.genres}>Action, Adventure, RPG</Text>
+        <Text style={styles.tagline}>{data?.tagline}</Text>
+        <Text style={styles.genres}>
+          {data?.genres.map((item, index) => `${item?.name}${index !== data?.genres.length-1 ? ', ' : ''}`)}
+        </Text>
         <View style={styles.bottom}>
-          <Text style={styles.releaseDate}>{dayjs(data?.release).locale('id').format('D MMMM YYYY')}</Text>
-          <Score score={data?.rating} />
+          <Text style={styles.releaseDate}>{dayjs(data?.release_date).locale('id').format('D MMMM YYYY')}</Text>
+          <Score score={data?.vote_average} />
         </View>
       </View>
     </View>

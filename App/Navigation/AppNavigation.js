@@ -18,26 +18,7 @@ const AppNavigation = () => {
         <Stack.Screen
           name="DetailScreen"
           component={DetailScreen}
-          options={navigation => ({
-            headerShown: false,
-            headerBackTitleVisible: false,
-              cardStyleInterpolator: ({current: {progress}}) => {
-                return {
-                  cardStyle: {
-                    opacity: progress,
-                  },
-                }
-              }
-          })}
-          sharedElementsConfig={(route) => {
-            const { item } = route.params;
-            return [{
-              id: `item.${item?.image_url}.photo`,
-              animation: 'move',
-              resize: 'clip',
-              align: 'left-top'
-            }];
-          }}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
