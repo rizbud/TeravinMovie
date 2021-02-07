@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
+import { BackHandler, Alert } from 'react-native'
 import SafeAreaView from 'react-native-safe-area-view'
 import FastImage from 'react-native-fast-image'
 import NetInfo from '@react-native-community/netinfo'
@@ -24,7 +25,10 @@ const LaunchScreen = props => {
         props.getList()
         setTimeout(() => navigation.replace('HomeScreen'), 3000)
       } else {
-        alert('Your Device Not Connected to Internet')
+        Alert.alert('Oopss...', 'Kamu tidak terhubung ke internet', [{
+          text: 'OK',
+          onPress: () => BackHandler.exitApp()
+        }])
       }
     })
 

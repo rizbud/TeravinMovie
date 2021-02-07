@@ -18,9 +18,11 @@ const HomeScreen = props => {
   const { navigation, trending, list } = props
 
   useEffect(() => {
-    const interval = setInterval(() => getData(), 60000)
-
-    return clearInterval(interval)
+    const interval = setInterval(() => {
+      props.getTrending()
+      props.getList()
+    }, 60000)
+    return () => clearInterval(interval)
   }, [])
 
   const getData = useCallback(() => {
@@ -35,22 +37,27 @@ const HomeScreen = props => {
   
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar translucent animated barStyle='dark-content' backgroundColor='white' />
+      <StatusBar translucent animated barStyle='dark-content' backgroundColor={apply('gray-100')} />
       <ScrollView
       refreshControl={<RefreshControl refreshing={trending?.fetching || list?.fetching} onRefresh={getData} />}
       showsVerticalScrollIndicator={false}>
         <Text style={[styles.title, apply('mx-4 pt-6')]}>Lagi Ngetren</Text>
         <ImageSlider
-          data={trending?.fetching ? [1, 2, 3] : trending?.data.slice(0, 5)}
+          data={(trending?.fetching || !trending?.data) ? [1, 2, 3] : trending?.data.slice(0, 5)}
           style={styles.imageSlider}
           containerStyle={apply('full')}
+          loading={trending?.fetching}
+          onPress={(item) => onMovieClick(item)}
         />
         <FlatList
           data={list?.fetching ? [1, 2, 3] : list?.data.slice(0, 10)}
           keyExtractor={(_, index) => index.toString()}
           contentContainerStyle={apply('flex w/100 px-5')}
           ListHeaderComponent={<Text style={styles.title}>Populer</Text>}
-          renderItem={({ item }) => <MovieCard item={item} onPress={() => onMovieClick(item)} />}
+          renderItem={({ item }) => (
+            <MovieCard item={item} loading={list?.fetching} onPress={() => onMovieClick(item)} />
+          )}
+          ListEmptyComponent={<Text style={styles.empty}>Tidak ada film populer.</Text>}
         />
       </ScrollView>
     </SafeAreaView>
